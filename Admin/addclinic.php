@@ -4,10 +4,10 @@
 </head>
 <body background= "clinicview.jpg" behavior="fixed">
 <ul>
-<li class="dropdown"><font color="yellow" size="10">ADMIN MODE</font></li>
+<li class="dropdown"><font color="yellow" size="10">ADMIN MODE</font></li> <!--intilizing admin mode-->
 <br>
 <h2>
-  <li class="dropdown">    
+  <li class="dropdown">    <!--class handle admin activities  and resposnsibility-->
   <a href="javascript:void(0)" class="dropbtn">Doctor</a>
     <div class="dropdown-content">
       <a href="adddoctor.php">Add Doctor</a>
@@ -18,7 +18,7 @@
   </li>
   
   <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn">Clinic</a>
+  <a href="javascript:void(0)" class="dropbtn">Clinic</a><!--clinic activities -->
     <div class="dropdown-content">
       <a href="addclinic.php">Add Clinic</a>
       <a href="deleteclinic.php">Delete Clinic</a>
@@ -30,7 +30,7 @@
     </div>
   </li>
   <li class="dropdown">    
-  <a href="javascript:void(0)" class="dropbtn">Manager</a>
+  <a href="javascript:void(0)" class="dropbtn">Manager</a><!--salhealth handler-->
     <div class="dropdown-content">
       <a href="addmanager.php">Add Manager</a>
       <a href="deletemanager.php">Delete Manager</a>
@@ -45,7 +45,7 @@
 	
 </ul>
 </h2>
-<center><h1>ADD CLINIC</h1><hr>
+<center><h1>ADD CLINIC</h1><hr><!-- clinic registration  form-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   CID:<input type="number" name="cid" required>
   <br>

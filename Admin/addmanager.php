@@ -45,7 +45,7 @@
 	
 </ul>
 </h2>
-<center><h1>ADD MANAGER</h1><hr>
+<center><h1>ADD MANAGER</h1><hr> <!--form for adding a manager-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   MID:<input type="number" name="mid" required>
   <br>

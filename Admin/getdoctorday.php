@@ -11,7 +11,7 @@ require_once("dbconfig.php");
 	$query ="SELECT * FROM doctor_availability WHERE CID =".$_POST["cid"];
 	$results = $conn->query($query);
 ?>
-	<option value="">Select Day & Time</option>
+	<option value="">Select Day & Time</option> <!--scheduling for a visit-->
 <?php
 	while($rs=$results->fetch_assoc()) {
 		$query1="Select Name from doctor where DID=".$rs["did"];

@@ -47,7 +47,7 @@
 </ul>
 </h2>
 <h1>
-<center><h1>DELETE MANAGER</h1><hr>
+<center><h1>DELETE MANAGER</h1><hr> <!--delete the managers  from the system-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 Enter MID:<center><input type="number" name="mid"></center>
 			<button type="submit" name="Submit1">Delete by DID</button>

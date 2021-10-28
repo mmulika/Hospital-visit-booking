@@ -69,7 +69,7 @@ function getDoctorRegion(val) {
 	
 </ul>
 </h2>
-<center><h1>ASSIGN DOCTOR TO A CLINIC</h1><hr>
+<center><h1>ASSIGN DOCTOR TO A CLINIC</h1><hr><!-- assigning a doctor to a specific clinic-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 <label style="font-size:20px" >City:</label>
 		<select name="city" id="city-list" class="demoInputBox"  onChange="getState(this.value);getDoctorRegion(this.value);">
@@ -98,7 +98,7 @@ function getDoctorRegion(val) {
 		</select>
 		
 		<label style="font-size:20px" >
-		Available Days<br>
+		Available Days<br>  <!--availability schedule of doctors-->
 		<table>
 		<tr><td>Monday:</td><td><input type="checkbox" value="Monday" name="daylist[]"/></td></tr>
 		<tr><td>Tuesday:</td><td><input type="checkbox" value="Tuesday" name="daylist[]"/></td></tr>
@@ -119,7 +119,7 @@ session_start();
 if(isset($_POST['logout'])){
 		session_unset();
 		session_destroy();
-		header( "Refresh:1; url=alogin.php"); 
+		header( "Refresh:1; url=alogin.php"); //loading 
 	}
 if(isset($_POST['Submit']))
 {

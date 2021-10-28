@@ -45,7 +45,7 @@
 	
 </ul>
 </h2>
-<center><h1>ADD DOCTOR</h1><hr>
+<center><h1>ADD DOCTOR</h1><hr><!--adding doctor  form-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   DID:<input type="number" name="did" required>
   <br>
@@ -57,7 +57,7 @@
   <br>
   DOB: <input type="date" name="dob" required>
   <br>
-  Experience: <input type ="number" name="experience" required>
+  Experience: <input type ="number" name="experience" required><!--years of experience -->
   <br>
   Specialization:<input type="text" name="specialization" required>
   <br>
@@ -85,7 +85,7 @@ if(isset($_POST['logout'])){
 	}
 function newUser()
 {
-	include 'dbconfig.php';
+	include 'dbconfig.php';//connection to the database 
 		$did=$_POST['did'];
 		$name=$_POST['name'];
 		$gender=$_POST['gender'];

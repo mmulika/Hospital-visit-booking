@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Get Manager</title>
 </head>
 <script type="text/javascript">//alert("sdfsd");</script>
 <body>
@@ -11,7 +11,7 @@ require_once("dbconfig.php");
 	$query ="SELECT * FROM manager_clinic WHERE CID =".$_POST["cid"];
 	$results = $conn->query($query);
 ?>
-	<option value="">Select Manager</option>
+	<option value="">Select Manager</option><!-- quering manager-->
 <?php
 	while($rs=$results->fetch_assoc()) {
 		$query1="Select Name from manager where MID=".$rs["MID"];

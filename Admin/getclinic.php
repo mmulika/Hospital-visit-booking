@@ -11,7 +11,7 @@ require_once("dbconfig.php");
 	$query ="SELECT * FROM clinic WHERE City = '" . $_POST["city"] . "'";
 	$results = $conn->query($query);
 ?>
-	<option value="">Select Clinic</option>
+	<option value="">Select Clinic</option> <!--fetch -->
 <?php
 	while($rs=$results->fetch_assoc()) {
 ?>

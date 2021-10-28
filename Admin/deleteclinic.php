@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="adminmain.css"> 
+<link rel="stylesheet" href="adminmain.css"> <!--admin styling-->
 </head>
 <body background= "clinicview.jpg">
 <ul>
@@ -47,7 +47,7 @@
 </ul>
 </h2>
 <h1>
-<center><h1>DELETE CLINIC</h1><hr>
+<center><h1>DELETE CLINIC</h1><hr> <!-- clinic delection from the system-->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 Enter CID:<center><input type="number" name="cid"></center>
 			<button type="submit" name="Submit1">Delete by CID</button>

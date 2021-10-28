@@ -1,5 +1,5 @@
 # AppointmentBookingSystem
-An Online Appointment Booking System for sahlhealth partiners with both the User as well as the Partiner  Side.
+An Online Appointment Booking System for Retail Chain Clinics with both the User as well as the Admin Side.
 
 **Purpose**  
 
